@@ -2,6 +2,7 @@ import os, sys
 import pickle
 from src.logger import logging
 from src.exception import CustomException
+from sklearn.metrics import accuracy_score, confusion_matrix, precision_recall_curve
 
 
 def save_object(file_path, obj):
@@ -15,3 +16,8 @@ def save_object(file_path, obj):
 
     except Exception as e:
         raise CustomException(e, sys)
+    
+
+
+def evaluate_model():
+    pass
